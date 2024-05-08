@@ -6,7 +6,8 @@ if [[ $? != 0 ]]; then
   exit;
 fi
 
-read new_ip < index.html
+read last_ip < last_IP.txt;
+read new_ip < index.html;
 if [[ $new_ip && $new_ip != $last_ip ]]; then
   echo "[RSERVER]($new_ip)" > README.md;
   git add README.md;
