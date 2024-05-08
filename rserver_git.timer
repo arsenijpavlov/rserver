@@ -1,0 +1,6 @@
+[Unit]
+Description=RSERVER_GIT
+
+[Timer]
+OnStartupSec=1min
+OnCalendar=1h
