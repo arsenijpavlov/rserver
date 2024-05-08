@@ -14,3 +14,5 @@ if [[ $new_ip && $new_ip != $last_ip ]]; then
   git commit -m "Upd IP";
   git push;
 fi
+
+rm index.html*;
