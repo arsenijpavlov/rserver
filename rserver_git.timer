@@ -1,6 +1,9 @@
 [Unit]
 Description=RSERVER_GIT
+Requires=rserver_git.service
 
 [Timer]
 OnStartupSec=1min
-OnCalendar=1h
+OnCalendar=3h
+AccuracySec=1min
+Unit=rserver_git.service

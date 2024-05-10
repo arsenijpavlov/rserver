@@ -1,12 +1,13 @@
 [Unit]
 Description=RSERVER_GIT
+Requires=rserver_git.timer
 
 [Service]
-Type=simple
+Type=unit
 User=root
 Group=root
-WorkingDirectory=
-ExecStart=
+WorkingDirectory=/home/rserver/Development/rserver
+ExecStart=/home/rserver/Development/rserver/run.sh
 
 #Restart=always
 #RestartSec=3
