@@ -1,1 +1,1 @@
-[RSERVER](http://178.70.222.2)
+[RSERVER](http://<!DOCTYPE html>)
