@@ -34,7 +34,10 @@ echo "new_ip: ${new_ip}"
 
 echo $new_ip > last_IP.txt
 #echo $(date) >> wrote.txt
-echo "[RSERVER](http://$new_ip)" > README.md
+echo "[RSERVER](https://$new_ip)" > README.md
+echo "" >> README.md
+echo "Сайт локального gitlab покажет предупреждение - это из-за самоподписанных ключей шифрования. Всё нормально." >> README.md
+
 #git add README.md
 git commit -a -m "Upd IP"
 git push
